@@ -1,8 +1,6 @@
 FROM node:14.16.1-alpine
 
-RUN apk --no-cache add curl
-
-RUN curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
+RUN npm install -g pnpm
 
 WORKDIR /usr/src/app
 
