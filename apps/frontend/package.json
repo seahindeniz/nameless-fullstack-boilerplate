@@ -1,5 +1,5 @@
 {
-  "name": "@nameless-fs/web",
+  "name": "@nameless-fullstack-boilerplate/web",
   "version": "0.0.1",
   "description": "Front-end app for the nameless boiler project",
   "author": "Sahin Deniz <seahindeniz@gmail.com> (https://github.com/seahindeniz)",
@@ -9,7 +9,7 @@
     "node": ">=10.17.0"
   },
   "license": "ISC",
-  "repository": "github:seahindeniz/nameless-fs",
+  "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "scripts": {
     "build": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack --config webpack.prod.ts --progress",
     "serve": "serve -n -l 3001",

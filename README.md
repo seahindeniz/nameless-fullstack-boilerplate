@@ -1,6 +1,6 @@
 # Nameless Fullstack Starter Kit 🤡
-![CI](https://github.com/seahindeniz/nameless-fs/actions/workflows/main.yml/badge.svg)
-[![codecov](https://codecov.io/gh/seahindeniz/nameless-fs/branch/main/graph/badge.svg?token=AWG33216O7)](https://codecov.io/gh/seahindeniz/nameless-fs)
+![CI](https://github.com/seahindeniz/nameless-fullstack-boilerplate/actions/workflows/main.yml/badge.svg)
+[![codecov](https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate/branch/main/graph/badge.svg?token=WxvZNHdcux)](https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate)
 
 ## Stack
 ### A rich, full-stack boilerplate, built in TypeScript

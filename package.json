@@ -1,5 +1,5 @@
 {
-  "name": "nameless-fs",
+  "name": "nameless-fullstack-boilerplate",
   "description": "Nameless Fullstack Starter Kit",
   "author": "Sahin Deniz <seahindeniz@gmail.com> (https://github.com/seahindeniz)",
   "private": true,
@@ -16,7 +16,7 @@
     "codecov"
   ],
   "license": "ISC",
-  "repository": "github:seahindeniz/nameless-fs",
+  "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "-": "",
