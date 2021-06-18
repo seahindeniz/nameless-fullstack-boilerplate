@@ -1,4 +1,3 @@
-// import baseStyled from '@emotion/styled';
 import baseStyled, { ThemedStyledInterface } from 'styled-components';
 
 const theme = {
