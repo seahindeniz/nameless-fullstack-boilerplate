@@ -33,7 +33,7 @@ Project's stack list is divided into 3 lists
 - 👕 Style Linter: [Stylelint](https://stylelint.io/)
 
 ## Requirements
-1. Node.js >= 10.17.0
+1. Node.js >= 12.22.0
 2. Docker
 
 > _Before getting started, make sure that Docker (Desktop) is running, otherwise commands may fail, etc._

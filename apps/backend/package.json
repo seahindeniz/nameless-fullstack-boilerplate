@@ -6,7 +6,7 @@
   "private": true,
   "main": "src/server.ts",
   "engines": {
-    "node": ">=10.17.0"
+    "node": ">=12.22.0"
   },
   "license": "ISC",
   "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
