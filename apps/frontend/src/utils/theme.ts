@@ -4,7 +4,7 @@ const theme = {
   colors: {},
 };
 
-export type Theme = typeof theme;
-export const styled = baseStyled as ThemedStyledInterface<Theme>;
+export type StyledThemeType = typeof theme;
+export const styled = baseStyled as ThemedStyledInterface<StyledThemeType>;
 
 export default theme;
