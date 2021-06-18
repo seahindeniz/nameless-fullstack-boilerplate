@@ -13,6 +13,7 @@
     // "rootDir": "./src",
     "baseUrl": "./src/",
     "paths": {
+      "@utils": ["utils"],
       "@assets/*": ["assets/*"],
       // "@views/*": ["src/routes/views/*"],
       "@components": ["components"],
