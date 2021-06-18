@@ -22,7 +22,7 @@ export function getDarkModeState(): boolean {
 
 const toggleMethods: ('add' | 'remove')[] = ['add', 'remove'];
 
-function changeMode(darkModeState: boolean) {
+function switchDarkMode(darkModeState: boolean) {
   let [method1, method2] = toggleMethods;
 
   if (!darkModeState) [method2, method1] = toggleMethods;
@@ -55,7 +55,7 @@ const DarkModeToggleButton = (): JSX.Element => {
     storeDarkModeState(newDarkModeState);
   };
 
-  useEffect(() => changeMode(darkModeState), [darkModeState]);
+  useEffect(() => switchDarkMode(darkModeState), [darkModeState]);
 
   return (
     <Button
