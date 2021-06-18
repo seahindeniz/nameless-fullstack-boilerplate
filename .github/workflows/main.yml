@@ -8,20 +8,20 @@ jobs:
   test:
     name: Test and report
     runs-on: ubuntu-latest
-    # strategy:
-    #   matrix:
-    #     node-version: ["10.17.0", 12.x, 14.x, 16.x]
+    strategy:
+      matrix:
+        node-version: ["10.17.0", 12.x, 14.x, 16.x]
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # - name: Setup NodeJS ${{ matrix.node-version }}
-      - name: Setup NodeJS 14
+      - name: Setup NodeJS ${{ matrix.node-version }}
+      # - name: Setup NodeJS 14
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 14
-          # node-version: ${{ matrix.node-version }}
+          # node-version: 14
+          node-version: ${{ matrix.node-version }}
 
       - name: Cache .pnpm-store
         uses: actions/cache@v1
@@ -45,5 +45,4 @@ jobs:
         uses: codecov/codecov-action@v1.5.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          # flags: unittests
           fail_ci_if_error: true
