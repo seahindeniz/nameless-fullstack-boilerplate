@@ -60,7 +60,6 @@ const DarkModeToggleButton = (): JSX.Element => {
   return (
     <Button
       layout="link"
-      size="large"
       icon={() =>
         darkModeState ? (
           <TiAdjustBrightness
