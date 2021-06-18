@@ -15,6 +15,7 @@ Project's stack list is divided into 3 lists
 - 💄 Formatter: [Prettier](https://prettier.io/)
 - 🚢 Deployment: [Docker]()
 - 📦 Continuous Integration: [GitHub Actions](https://github.com/features/actions/)
+- 🔱 Reverse Proxy Server: [NGINX](https://www.nginx.com/)
 
 #### Backend
 - ⏱ Runtime: [Node.js](https://nodejs.org/en/)
@@ -27,7 +28,6 @@ Project's stack list is divided into 3 lists
 #### Frontend
 - 🖼 UI Framework: [React](https://reactjs.org/)
 - 🎨 CSS Framework: [Tailwind](https://tailwindcss.com/)
-- 🔱 Reverse Proxy Server: [NGINX](https://www.nginx.com/)
 - 📝 UI Documentation: [Storybook](https://storybook.js.org/)
 - 🔨 Bundler: [Webpack](https://webpack.js.org/)
 - 👕 Style Linter: [Stylelint](https://stylelint.io/)
