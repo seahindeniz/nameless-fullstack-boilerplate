@@ -58,7 +58,6 @@
     "no-param-reassign": ["error", { "props": false }],
     "no-plusplus": 0,
     "no-use-before-define": "off",
-    // "semi": ["error", "always"]
     "padding-line-between-statements": [
       "error",
       {
@@ -86,7 +85,7 @@
         "extensions": [".js", ".ts", ".jsx", ".tsx", ".json"]
       },
       // This loads tsconfig.json to ESLint but,
-      // VSCode extension might have a bit of delay for caching it
+      // ESLint's VSCode extension might have delays for caching it
       "typescript": {
         "alwaysTryTypes": true
       }
