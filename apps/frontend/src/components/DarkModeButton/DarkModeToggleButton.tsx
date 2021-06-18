@@ -1,15 +1,15 @@
+import { isColorSchemeDark, storage } from '@utils';
 import { Button } from '@windmill/react-ui';
 import { useEffect, useState } from 'react';
 import { FaMoon } from 'react-icons/fa';
 import { TiAdjustBrightness } from 'react-icons/ti';
-import { isColorSchemeDark } from '../../utils';
 
 function getStoredDarkModeState() {
-  return localStorage.getItem('darkMode');
+  return storage<boolean>('darkMode');
 }
 
 function storeDarkModeState(darkModeState: boolean) {
-  return localStorage.setItem('darkMode', String(darkModeState));
+  return storage('darkMode', darkModeState);
 }
 
 export function getDarkModeState(): boolean {
@@ -17,7 +17,7 @@ export function getDarkModeState(): boolean {
 
   if (storedDarkModeState === null) return isColorSchemeDark();
 
-  return storedDarkModeState === 'true';
+  return storedDarkModeState;
 }
 
 const toggleMethods: ('add' | 'remove')[] = ['add', 'remove'];
