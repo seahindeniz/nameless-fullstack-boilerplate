@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - ../../db:/data/db
+    environment:
+      AUTH: 'no'
+    logging:
+      driver: none
+
+  backend:
+    image: backend
+    build: .
+    depends_on:
+      - mongodb
+    environment:
+      DB_HOST: mongodb
+    working_dir: /usr/src/app
+    ports:
+      - 3000:3000
+    links:
+      - mongodb
+    command: pnpm start

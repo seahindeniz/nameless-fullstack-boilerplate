@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "skipLibCheck": true
+  },
+  "exclude": ["**/*.spec.ts"]
+}

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: frontend
+    build: .
+    working_dir: /usr/src/app
+    ports:
+      - 80:80
+      - 443:443
+    # command: yarn start

@@ -1,0 +1,14 @@
+{
+  "directoryListing": false,
+  "public": "./dist",
+  "headers": [
+    {
+      "headers": [{ "key": "Cache-Control", "value": "max-age=7200" }],
+      "source": "**/*.{jpg,jpeg,gif,png}"
+    },
+    {
+      "headers": [{ "key": "Cache-Control", "value": "max-age=31536000" }],
+      "source": "**/*.{js,css}"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "CarData": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Model name",
+        "minLength": 1
+      },
+      "brand": {
+        "type": "string",
+        "description": "Brand name",
+        "minLength": 1
+      },
+      "price": {
+        "type": "number",
+        "minimum": 0
+      },
+      "age": {
+        "type": "number",
+        "minimum": 0
+      },
+      "services": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "service": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "service",
+            "date"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "title",
+      "brand",
+      "price",
+      "age"
+    ],
+    "additionalProperties": false
+  },
+  "CarDocument": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Model name",
+        "minLength": 1
+      },
+      "brand": {
+        "type": "string",
+        "description": "Brand name",
+        "minLength": 1
+      },
+      "price": {
+        "type": "number",
+        "minimum": 0
+      },
+      "age": {
+        "type": "number",
+        "minimum": 0
+      },
+      "services": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "service": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "service",
+            "date"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "id": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "age",
+      "brand",
+      "price",
+      "title"
+    ]
+  }
+}

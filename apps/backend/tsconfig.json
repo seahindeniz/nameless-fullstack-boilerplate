@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2018"],
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    // "baseUrl": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "target": "ES2018"
+    // "paths": {
+    //   "graphql": ["node_modules/graphql"],
+    //   "@root/*": ["./*"]
+    // }
+  },
+  "exclude": [
+    //
+    "node_modules",
+    "dist",
+    "test",
+    "scripts",
+    "jest.config.ts"
+  ],
+  "include": ["src"]
+}

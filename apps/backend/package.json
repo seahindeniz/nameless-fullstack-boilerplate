@@ -1,0 +1,80 @@
+{
+  "name": "@nameless-fs/backend",
+  "version": "0.0.1",
+  "description": "Back-end app for the nameless boiler project",
+  "author": "Sahin Deniz <seahindeniz@gmail.com> (https://github.com/seahindeniz)",
+  "private": true,
+  "main": "src/server.ts",
+  "engines": {
+    "node": ">=10.17.0"
+  },
+  "license": "ISC",
+  "repository": "github:seahindeniz/nameless-fs",
+  "scripts": {
+    "build": "rimraf dist && tsc --project tsconfig.prod.json",
+    "start": "cross-env NODE_ENV=production node dist/server.js",
+    "db": "docker-compose -f ../../docker-compose.yml up -d --build mongodb",
+    "dev": "pnpm run db && nodemon",
+    "generateSchema": "ts-node scripts/generateJSONSchema.ts",
+    "-": "",
+    "test": "pnpm run generateSchema && jest --detectOpenHandles --forceExit",
+    "test:watch": "pnpm test -- --watch",
+    "test:watchAll": "pnpm test -- --watchAll",
+    "--": "",
+    "lint": "pnpm run generateSchema && eslint {src,test,config}/**/*.{js,ts}",
+    "lint:ci": "pnpm run lint -- --quiet",
+    "lint:fix": "pnpm run lint -- --fix",
+    "---": "",
+    "dock": "docker-compose up -d --build",
+    "make-lock": "make-dedicated-lockfile"
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.2",
+    "@typegoose/typegoose": "^8.0.0-beta.13",
+    "class-validator": "^0.13.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "fastify": "^3.16.2",
+    "fastify-swagger": "^4.7.0",
+    "fastify-websocket": "^3.2.0",
+    "graphql": "^15.5.0",
+    "mercurius": "^7.7.0",
+    "mongoose": "^5.12.12",
+    "rimraf": "^3.0.2",
+    "type-graphql": "^1.1.1",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@pnpm/make-dedicated-lockfile": "^0.2.9",
+    "@types/ip": "^1.1.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.0",
+    "@types/ws": "^7.4.4",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "get-port": "^5.1.1",
+    "glob-promise": "^4.2.0",
+    "jest": "^26.6.3",
+    "mercurius-codegen": "^1.6.1",
+    "mockingoose": "^2.15.2",
+    "mongodb-memory-server": "7.0.0-beta.42",
+    "nodemon": "^2.0.7",
+    "pino-pretty": "^5.0.2",
+    "prettier": "^2.3.0",
+    "ts-jest": "^26.5.6",
+    "ts-json-schema-generator": "^0.93.0",
+    "ts-node": "^10.0.0",
+    "ws": "^7.4.6"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "downloadDir": "./node_modules/mongodb-memory-server"
+    }
+  }
+}

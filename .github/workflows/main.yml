@@ -1,0 +1,49 @@
+name: Lint, Build & Test
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    name: Test and report
+    runs-on: ubuntu-latest
+    # strategy:
+    #   matrix:
+    #     node-version: ["10.17.0", 12.x, 14.x, 16.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # - name: Setup NodeJS ${{ matrix.node-version }}
+      - name: Setup NodeJS 14
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14
+          # node-version: ${{ matrix.node-version }}
+
+      - name: Cache .pnpm-store
+        uses: actions/cache@v1
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-node${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Install pnpm
+        run: curl -f https://get.pnpm.io/v6.js | node - add --global pnpm@6
+
+      - name: Install node dependencies
+        run: pnpm install
+
+      - name: Check lint
+        run: pnpm lint:ci
+
+      - name: Run test
+        run: pnpm test
+
+      - name: Upload coverage reports
+        uses: codecov/codecov-action@v1.5.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          # flags: unittests
+          fail_ci_if_error: true

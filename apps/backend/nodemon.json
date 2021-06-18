@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon.json",
+  "delay": 300,
+  "exec": "npm run generateSchema && node --inspect=0.0.0.0:9229 -r ts-node/register ./src/server.ts",
+  "exec3": "ts-node --project ./tsconfig.json ./src/server.ts",
+  "ext": ".ts,.js",
+  "ignore": [
+    "log/*",
+    "test/*",
+    "data/**",
+    "package.json",
+    "node_modules/*",
+    "./*.json",
+    "*.test.ts",
+    "*.spec.ts"
+  ],
+  "watch": ["src"]
+}

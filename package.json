@@ -1,0 +1,46 @@
+{
+  "name": "nameless-fs",
+  "description": "Nameless Fullstack Starter Kit",
+  "author": "Sahin Deniz <seahindeniz@gmail.com> (https://github.com/seahindeniz)",
+  "private": true,
+  "keywords": [
+    "node",
+    "typescript",
+    "docker",
+    "mongo",
+    "mongoose",
+    "fastify",
+    "websocket",
+    "swagger",
+    "jest",
+    "codecov"
+  ],
+  "license": "ISC",
+  "repository": "github:seahindeniz/nameless-fs",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "-": "",
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "lint:ci": "pnpm -r lint:ci",
+    "--": "",
+    "dock": "docker-compose up -d --build",
+    "clean-nm": "del-cli **/node_modules",
+    "make-lock": "pnpm -r make-lock"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "^17.0.10",
+      "@types/webpack": "^5.28.0",
+      "trim": "^1.0.1",
+      "postcss": "^8.3.0",
+      "css-select": "^4.1.3"
+    }
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1"
+  }
+}

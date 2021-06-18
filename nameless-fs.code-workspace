@@ -1,0 +1,107 @@
+{
+  "extensions": {
+    "recommendations": [
+      "streetsidesoftware.code-spell-checker",
+      "ms-azuretools.vscode-docker",
+      "dbaeumer.vscode-eslint",
+      "orta.vscode-jest",
+      "esbenp.prettier-vscode",
+      "fabiospampinato.vscode-todo-plus"
+    ]
+  },
+  "folders": [
+    {
+      "name": "✨ root",
+      "path": "."
+    },
+    {
+      "name": "🔙 backend",
+      "path": "apps/backend"
+    },
+    {
+      "name": "🚪 frontend",
+      "path": "apps/frontend"
+    }
+  ],
+  "settings": {
+    "cSpell.words": [
+      "Middlewares",
+      "boomify",
+      "brotli",
+      "camelcase",
+      "clsx",
+      "codecov",
+      "fastify",
+      "fullhash",
+      "graphiql",
+      "jsxdev",
+      "linebreak",
+      "mercurius",
+      "minlength",
+      "mockingoose",
+      "mongod",
+      "mongodb",
+      "numiterations",
+      "openapi",
+      "pino",
+      "plusplus",
+      "pnpm",
+      "pnpx",
+      "prebuild",
+      "predev",
+      "preinstall",
+      "prelint",
+      "readonly",
+      "stylelint",
+      "svgr",
+      "tailwindcss",
+      "typegoose",
+      "virtuals",
+      "zopfli"
+    ],
+    "colorTabs.config": [
+      {
+        "color": "#687b8c",
+        "regex": "✨ root\\/.*"
+      },
+      {
+        "color": "#24a865",
+        "regex": "🔙 backend\\/.*"
+      },
+      {
+        "color": "#0089e3",
+        "regex": "🚪 frontend\\/.*"
+      }
+    ],
+    "css.validate": false,
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "npm.packageManager": "pnpm",
+    "stylelint.enable": true,
+    "todo.embedded.exclude": ["**/.git", "**/node_modules", "**/package.json"],
+    "workbench.colorCustomizations": {
+      "[Dark++ Italic]": {
+        "activityBar.background": "#111",
+        "editor.background": "#000",
+        "editorGroupHeader.tabsBackground": "#111",
+        "sideBar.background": "#000",
+        "sideBar.border": "#222",
+        "tab.inactiveForeground": "#bbb",
+        "tab.unfocusedInactiveBackground": "#222",
+        "window.activeBorder": "#000"
+      },
+      "[Default Dark+]": {
+        "activityBar.background": "#111",
+        "editor.background": "#000",
+        "editorGroupHeader.tabsBackground": "#111",
+        "sideBar.background": "#000",
+        "sideBar.border": "#222",
+        "tab.inactiveForeground": "#bbb",
+        "tab.unfocusedInactiveBackground": "#222",
+        "window.activeBorder": "#000"
+      }
+    }
+  }
+}

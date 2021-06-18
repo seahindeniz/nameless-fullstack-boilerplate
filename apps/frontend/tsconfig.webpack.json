@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    // "baseUrl": ".",
+    // "skipDefaultLibCheck": true,
+    // "skipLibCheck": true,
+    "noImplicitAny": false,
+    // "checkJs": false,
+    // "allowUnusedLabels": true
+  },
+  // "include": ["webpack.*.ts"]
+}

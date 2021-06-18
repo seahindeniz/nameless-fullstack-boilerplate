@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - dbvolume:/data
+    environment:
+      AUTH: 'no'
+    logging:
+      driver: none
+
+  app:
+    image: app
+    depends_on:
+      - mongodb
+    build: .
+    environment:
+      APP_HOST: '0.0.0.0'
+      APP_PORT: 3000
+      DB_HOST: mongodb
+      DB_PORT: 27017
+      DB_NAME: cars
+    working_dir: /usr/src/app
+    ports:
+      - 3000:3000
+      - 9229:9229
+    links:
+      - mongodb
+    command:
+      [
+        node,
+        --inspect=0.0.0.0:9229,
+        -r,
+        ts-node/register,
+        -r,
+        dotenv/config,
+        ./src/server.ts',
+      ]
+    # restart: always

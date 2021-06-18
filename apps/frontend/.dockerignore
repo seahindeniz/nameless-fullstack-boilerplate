@@ -1,0 +1,14 @@
+*
+
+!./nginx
+!./public
+!./src
+!./.storybook
+
+# !./*.*
+!./tsconfig.*
+!./package.json
+!./pnpm-lock.yaml
+!./webpack.prod.ts
+!./webpack.common.ts
+!./tailwind.config.ts

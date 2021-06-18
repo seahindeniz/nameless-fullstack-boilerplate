@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:@typescript-eslint/recommended",
+    "../../.eslintrc"
+  ],
+  "env": {
+    "node": true
+  },
+  "root": true,
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["*.resolver.ts"],
+      "rules": {
+        "class-methods-use-this": "off"
+      }
+    }
+  ]
+}

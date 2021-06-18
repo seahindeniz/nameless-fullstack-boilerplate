@@ -1,0 +1,95 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "mocha": true
+  },
+  "extends": ["plugin:prettier/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["scripts/*", "test/**/*.ts"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    // Typescript
+    "@typescript-eslint/ban-ts-comment": [0, { "ts-expect-error": false }],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    // Import
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.ts", "**/*.spec.ts"] }
+    ],
+    // General
+    "camelcase": "warn",
+    "linebreak-style": ["error", "unix"],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
+    "no-console": [
+      "warn",
+      { "allow": ["warn", "error", "info", "group", "groupEnd"] }
+    ],
+    "no-irregular-whitespace": "error",
+    "no-nested-ternary": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-plusplus": 0,
+    "no-use-before-define": "off",
+    // "semi": ["error", "always"]
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "next": "*",
+        "prev": ["const", "let", "var", "block-like", "if"]
+      },
+      {
+        "blankLine": "always",
+        "next": ["return", "const", "let", "var", "block-like", "if"],
+        "prev": "*"
+      },
+      {
+        "blankLine": "any",
+        "next": ["const", "let", "var"],
+        "prev": ["const", "let", "var"]
+      }
+    ],
+    "quotes": ["error", "single", { "avoidEscape": true }]
+  },
+  "settings": {
+    "import/extensions": [".js", ".ts", ".mjs", ".jsx", ".tsx"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts", ".jsx", ".tsx", ".json"]
+      },
+      // This loads tsconfig.json to ESLint but,
+      // VSCode extension might have a bit of delay for caching it
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  }
+}
