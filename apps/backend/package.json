@@ -17,7 +17,7 @@
     "dev": "pnpm run db && nodemon",
     "generateSchema": "ts-node scripts/generateJSONSchema.ts",
     "-": "",
-    "test": "pnpm run generateSchema && jest --detectOpenHandles --forceExit",
+    "test": "pnpm run generateSchema && jest",
     "test:watch": "pnpm test -- --watch",
     "test:watchAll": "pnpm test -- --watchAll",
     "--": "",

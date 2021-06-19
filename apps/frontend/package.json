@@ -19,7 +19,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "--": "",
-    "test": "jest --detectOpenHandles --forceExit",
+    "test": "jest",
     "test:watch": "pnpm test -- --watch",
     "test:watchAll": "pnpm test -- --watchAll",
     "---": "",
