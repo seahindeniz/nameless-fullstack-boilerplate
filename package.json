@@ -28,7 +28,7 @@
     "lint:ci": "pnpm -r lint:ci",
     "--": "",
     "dock": "docker-compose up -d --build",
-    "clean-nm": "del-cli **/node_modules",
+    "rm-nm": "del-cli **/node_modules",
     "make-lock": "pnpm -r make-lock"
   },
   "pnpm": {
