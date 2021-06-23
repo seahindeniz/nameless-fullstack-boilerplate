@@ -11,7 +11,7 @@
   ],
   "overrides": [
     {
-      "files": ["webpack.*.ts", "*.spec.tsx"],
+      "files": ["webpack.*.ts", "*.spec.tsx", "jest.config.ts"],
       "rules": {
         "import/no-extraneous-dependencies": "off"
       }
