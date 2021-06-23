@@ -35,6 +35,7 @@
     "overrides": {
       "@types/react": "^17.0.10",
       "@types/webpack": "^5.28.0",
+      "graphql": "^15.5.1",
       "trim": "^1.0.1",
       "postcss": "^8.3.0"
     }
