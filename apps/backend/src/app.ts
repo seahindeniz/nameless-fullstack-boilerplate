@@ -10,17 +10,18 @@ import registerREST from './rest';
 import registerWS from './sockets';
 
 export default function initApp({
-  wsOnly,
+  scope = ['gql', 'rest', 'ws'],
   ...opts
-}: { wsOnly?: boolean } & FastifyServerOptions = {}): FastifyInstance {
+}: {
+  scope?: ('ws' | 'rest' | 'gql')[];
+} & FastifyServerOptions = {}): FastifyInstance {
   const app = fastify(opts);
 
-  registerWS(app);
+  if (scope.includes('ws')) registerWS(app);
 
-  if (wsOnly) return app;
+  if (scope.includes('gql')) registerGQL(app);
 
-  registerGQL(app);
-  registerREST(app);
+  if (scope.includes('rest')) registerREST(app);
 
   const defaultErrorHandler = app.errorHandler;
 

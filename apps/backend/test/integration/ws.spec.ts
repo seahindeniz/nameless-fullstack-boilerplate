@@ -6,7 +6,7 @@ describe('Testing WebSocket connection', () => {
   let appPort: number;
   let client: WebSocket;
 
-  const app = initApp({ wsOnly: true });
+  const app = initApp({ scope: ['ws'] });
 
   const consoleInfoSpy = jest.spyOn(console, 'info').mockImplementation();
   const consoleGroupSpy = jest.spyOn(console, 'group').mockImplementation();

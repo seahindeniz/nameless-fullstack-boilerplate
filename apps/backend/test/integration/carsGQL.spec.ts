@@ -13,8 +13,8 @@ const sampleMutation = gql`
   }
 `;
 
-describe('Testing the Cars API', () => {
-  const app = initApp();
+describe('Testing the Cars GraphQL API', () => {
+  const app = initApp({ scope: ['gql'] });
 
   beforeAll(async () => connectDB());
   afterEach(async () => clearDBCollections());

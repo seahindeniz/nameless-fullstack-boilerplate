@@ -4,7 +4,7 @@ import { CarData } from '../../src/models/Car';
 import { clearDBCollections, closeDB, connectDB } from '../dbHandler';
 
 describe('Testing the Cars API', () => {
-  const app = initApp();
+  const app = initApp({ scope: ['rest'] });
 
   beforeAll(async () => connectDB());
   afterEach(async () => clearDBCollections());
