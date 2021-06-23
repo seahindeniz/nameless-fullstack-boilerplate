@@ -10,18 +10,15 @@
     "moduleResolution": "node",
     "strict": true,
     "noImplicitAny": true,
-    // "rootDir": "./src",
-    "baseUrl": "./src/",
+    "baseUrl": ".",
     "paths": {
-      "@utils": ["utils"],
-      "@assets/*": ["assets/*"],
-      // "@views/*": ["src/routes/views/*"],
-      "@components": ["components"],
-      "@components/*": ["components/*"]
-      // "/*": ["./src/*"]
+      "@utils": ["src/utils"],
+      "@utils/*": ["src/utils/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components": ["src/components"],
+      "@components/*": ["src/components/*"]
     },
     "outDir": "dist/",
-    // "sourceRoot": "./src",
     "removeComments": true,
     "resolveJsonModule": true,
     "sourceMap": true,
