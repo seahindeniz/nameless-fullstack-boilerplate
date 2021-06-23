@@ -1,9 +1,9 @@
-import { getDarkModeState } from '@components/DarkModeButton/DarkModeToggleButton';
 import { Shell } from '@components';
+import { getDarkModeState } from '@components/DarkModeButton/DarkModeToggleButton';
+import theme from '@utils/theme';
 import { Windmill } from '@windmill/react-ui';
 import { BrowserRouter } from 'react-router-dom';
 import { StyleSheetManager, ThemeProvider } from 'styled-components';
-import { theme } from '@utils';
 import Routes from './routes/routes';
 
 import './assets/main.css';
