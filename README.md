@@ -2,7 +2,7 @@
 ![CI](https://github.com/seahindeniz/nameless-fullstack-boilerplate/actions/workflows/main.yml/badge.svg)
 [![codecov](https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate/branch/main/graph/badge.svg?token=WxvZNHdcux)](https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate)
 
-## Stack
+## Ingredients 👨‍🍳
 ### A rich, full-stack boilerplate, built in TypeScript
 Project's stack list is divided into 3 lists
 
