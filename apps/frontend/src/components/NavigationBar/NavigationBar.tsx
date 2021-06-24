@@ -39,8 +39,8 @@ const NavigationBar: React.FC = () => {
           <NavigationBarItem to="/about" onClick={closeMenu}>
             About
           </NavigationBarItem>
-          <NavigationBarItem to="/cars" onClick={closeMenu}>
-            Cars
+          <NavigationBarItem to="/what" onClick={closeMenu}>
+            404
           </NavigationBarItem>
           <DarkModeToggleButton />
         </ul>
