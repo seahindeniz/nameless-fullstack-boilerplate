@@ -42,7 +42,9 @@ const NavigationBar: React.FC = () => {
           <NavigationBarItem to="/what" onClick={closeMenu}>
             404
           </NavigationBarItem>
-          <DarkModeToggleButton />
+          <li className="lg:px-4 py-2">
+            <DarkModeToggleButton />
+          </li>
         </ul>
       </nav>
     </>
