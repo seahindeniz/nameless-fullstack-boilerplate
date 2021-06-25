@@ -1,8 +1,24 @@
 name: Lint, Build & Test
 
 on:
-  - push
-  - pull_request
+  push:
+    paths-ignore:
+      - '.github/**'
+      - '.vscode/**'
+      - '**/nginx/**'
+      - '**/*.md'
+      - '**/Dockerfile'
+      - '**/docker*.ya?ml'
+      - '**.code-workspace'
+  pull_request:
+    paths-ignore:
+      - '.github/**'
+      - '.vscode/**'
+      - '**/nginx/**'
+      - '**/*.md'
+      - '**/Dockerfile'
+      - '**/docker*.ya?ml'
+      - '**.code-workspace'
 
 jobs:
   test:
