@@ -1,9 +1,19 @@
+import Menu from '@assets/logo/menu.svg';
+import { Button } from '@windmill/react-ui';
 import clsx from 'clsx';
+import { useRef } from 'react';
 import { FaHatWizard } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import DarkModeToggleButton from '../DarkModeButton/DarkModeToggleButton';
 import NavigationBar from '../NavigationBar/NavigationBar';
+import NavigationBarItem from '../NavigationBar/NavigationBarItem';
 
 const Header = (): JSX.Element => {
+  const navRef = useRef<HTMLElement>(null);
+
+  const closeMenu = () => navRef.current?.classList.add('hidden');
+  const toggleMenu = () => navRef.current?.classList.toggle('hidden');
+
   return (
     <header
       role="banner"
@@ -12,13 +22,35 @@ const Header = (): JSX.Element => {
         'bg-white dark:bg-black',
       )}
     >
-      <div id="logo" className="flex-1 flex items-center text-2xl">
-        <Link to="/" className="flex flex-1 items-center">
+      <div id="logo" className="flex flex-1 items-center">
+        <Link to="/" className="flex items-center">
           <FaHatWizard size="32" />
-          <p className="px-2 font-sans">Nameless</p>
+          <p className="px-2 font-sans text-2xl">Nameless</p>
         </Link>
       </div>
-      <NavigationBar />
+
+      <Button
+        icon={() => <Menu />}
+        size="small"
+        layout="link"
+        aria-label="Menu"
+        className="lg:hidden"
+        onClick={toggleMenu}
+      />
+      <NavigationBar ref={navRef}>
+        <NavigationBarItem to="/" onClick={closeMenu}>
+          Home
+        </NavigationBarItem>
+        <NavigationBarItem to="/about" onClick={closeMenu}>
+          About
+        </NavigationBarItem>
+        <NavigationBarItem to="/what" onClick={closeMenu}>
+          404
+        </NavigationBarItem>
+        <li className="lg:px-4 py-2">
+          <DarkModeToggleButton />
+        </li>
+      </NavigationBar>
     </header>
   );
 };
