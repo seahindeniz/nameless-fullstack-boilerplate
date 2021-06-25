@@ -36,7 +36,16 @@ Project's stack list is divided into 3 lists
 1. Node.js >= 12.22.0
 2. Docker
 
-> _Before getting started, make sure that Docker (Desktop) is running, otherwise commands may fail, etc._
+> _Before getting started, make sure that Docker (Desktop) is running if you
+  want to work locally, otherwise commands may fail, etc._
+
+## Getting started
+1. Use this repository as template or create a new repository by cloning
+2. Visit [Codecov](https://docs.codecov.com/docs/quick-start#getting-started)
+   and register your repo
+3. Head to the repository Settings > [Secrets](./settings/secrets/actions) for
+   registering your Codecov token
+4. Add a new secret: `CODECOV_TOKEN`
 
 ## Run apps locally
 1. Clone or use this repository as template
@@ -74,3 +83,5 @@ This project consists of integration tests and unit tests upon the necessity of
 requirements
 Run Jest for running tests:   
 `pnpm test`
+
+## Repository
