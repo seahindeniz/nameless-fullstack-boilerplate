@@ -16,9 +16,13 @@ const config: Config.InitialOptions = {
   //   // '**/TypegooseMiddleware.spec.ts',
   // ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: '<rootDir>/',
-  }),
+  moduleNameMapper: {
+    '\\.svg': '<rootDir>/test/__mocks__/svgMock.ts',
+    ...pathsToModuleNameMapper(compilerOptions.paths, {
+      prefix: '<rootDir>/',
+    }),
+  },
+  setupFiles: ['./test/setupJest.ts'],
 };
 
 export default config;
