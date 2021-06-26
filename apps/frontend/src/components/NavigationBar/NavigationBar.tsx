@@ -1,15 +1,19 @@
 import Menu from '@assets/logo/menu.svg';
 import { Button } from '@windmill/react-ui';
-import { useRef } from 'react';
+import clsx from 'clsx';
+import { useState } from 'react';
 import DarkModeToggleButton from '../DarkModeButton/DarkModeToggleButton';
 import NavigationBarItem from './NavigationBarItem';
 
 const NavigationBar: React.FC = ({ ...props }) => {
-  const dummyRefElement = document.createElement('nav');
-  const navRef = useRef<HTMLElement>(dummyRefElement);
+  const [menuInvisible, setMenuInvisibility] = useState(true);
 
-  const closeMenu = () => navRef.current.classList.add('hidden');
-  const toggleMenu = () => navRef.current.classList.toggle('hidden');
+  const closeMenu = () => setMenuInvisibility(true);
+  const toggleMenu = () => setMenuInvisibility(!menuInvisible);
+
+  const navClassnames = clsx('lg:flex lg:items-center lg:w-auto w-full', {
+    hidden: menuInvisible,
+  });
 
   return (
     <>
@@ -21,12 +25,7 @@ const NavigationBar: React.FC = ({ ...props }) => {
         className="lg:hidden"
         onClick={toggleMenu}
       />
-      <nav
-        ref={navRef}
-        role="navigation"
-        className="hidden lg:flex lg:items-center lg:w-auto w-full"
-        {...props}
-      >
+      <nav role="navigation" className={navClassnames} {...props}>
         <ul className="lg:flex items-center justify-between pt-4 lg:pt-0">
           <NavigationBarItem to="/" onClick={closeMenu}>
             Home

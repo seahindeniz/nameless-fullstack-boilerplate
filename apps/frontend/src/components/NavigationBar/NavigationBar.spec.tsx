@@ -72,7 +72,7 @@ it('should click on Home link', () => {
     ':scope > nav',
   ) as HTMLButtonElement;
   const homeAnchor = navElement.querySelector(
-    ':scope > ul > li:first-child > a',
+    'ul > li:first-child > a',
   ) as HTMLButtonElement;
 
   expect(navElement.classList.contains('hidden')).toBe(true);
