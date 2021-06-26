@@ -4,12 +4,14 @@ import { useEffect, useState } from 'react';
 import { FaMoon } from 'react-icons/fa';
 import { TiAdjustBrightness } from 'react-icons/ti';
 
+export const STORAGE_KEY = 'darkMode';
+
 function getStoredDarkModeState() {
-  return storage<boolean>('darkMode');
+  return storage<boolean>(STORAGE_KEY);
 }
 
 function storeDarkModeState(darkModeState: boolean) {
-  return storage('darkMode', darkModeState);
+  return storage(STORAGE_KEY, darkModeState);
 }
 
 export function getDarkModeState(): boolean {
@@ -30,6 +32,11 @@ function switchDarkMode(darkModeState: boolean) {
   document.documentElement.classList[method1]('dark');
   document.documentElement.classList[method2]('light');
 }
+
+export const NightIcon = (): JSX.Element => <FaMoon size={24} />;
+export const LightIcon = (): JSX.Element => (
+  <TiAdjustBrightness size={24} className="fill-current text-yellow-400" />
+);
 
 const DarkModeToggleButton = (): JSX.Element => {
   const [darkModeState, setDarkModeState] = useState<boolean>(getDarkModeState);
@@ -60,16 +67,7 @@ const DarkModeToggleButton = (): JSX.Element => {
   return (
     <Button
       layout="link"
-      icon={() =>
-        darkModeState ? (
-          <TiAdjustBrightness
-            size={24}
-            className="fill-current text-yellow-400"
-          />
-        ) : (
-          <FaMoon size={24} />
-        )
-      }
+      icon={() => (darkModeState ? <LightIcon /> : <NightIcon />)}
       onClick={handleToggleClick}
     />
   );
