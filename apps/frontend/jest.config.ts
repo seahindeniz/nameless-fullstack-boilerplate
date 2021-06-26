@@ -22,7 +22,6 @@ const config: Config.InitialOptions = {
       prefix: '<rootDir>/',
     }),
   },
-  setupFiles: ['./test/setupJest.ts'],
 };
 
 export default config;
