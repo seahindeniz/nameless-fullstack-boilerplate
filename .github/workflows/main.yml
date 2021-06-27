@@ -55,7 +55,7 @@ jobs:
         run: pnpm lint:ci
 
       - name: Run test
-        run: pnpm test
+        run: pnpm test:ci
 
       - name: Upload coverage reports
         uses: codecov/codecov-action@v1.5.0
