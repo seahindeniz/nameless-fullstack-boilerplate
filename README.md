@@ -1,12 +1,41 @@
-# Nameless Fullstack Starter Kit 🤡
-![CI](https://github.com/seahindeniz/nameless-fullstack-boilerplate/actions/workflows/main.yml/badge.svg)
-[![codecov](https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate/branch/main/graph/badge.svg?token=WxvZNHdcux)](https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate)
+<div align="center">
+  <img
+    alt="Nameless logo"
+    src="https://i.ibb.co/3rNQyJk/clown-5862845-min.png"
+    height="140"
+  />
+  <h2 align="center">Nameless Fullstack Starter Kit</h2>
+  <p align="center">A rich, full-stack boilerplate, built in TypeScript.</p>
+  <p align="center">
+    <a href="https://github.com/seahindeniz/nameless-fullstack-boilerplate/LICENSE.md">
+      <img
+        alt="License"
+        src="https://img.shields.io/github/license/seahindeniz/nameless-fullstack-boilerplate?color=brightgreen&style=for-the-badge"
+      />
+    </a>
+    <a
+      href="https://github.com/seahindeniz/nameless-fullstack-boilerplate/actions"
+    >
+      <img
+        alt="GitHub Actions"
+        src="https://img.shields.io/github/workflow/status/seahindeniz/nameless-fullstack-boilerplate/Lint,%20Build%20&%20Test?style=for-the-badge"
+        height="27"
+      />
+    </a>
+    <a href="https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate">
+      <img
+        alt="Codecov branch"
+        src="https://img.shields.io/codecov/c/github/seahindeniz/nameless-fullstack-boilerplate/master.svg?style=for-the-badge"
+      />
+    </a>
+  </p>
+</div>
 
-## Ingredients 👨‍🍳
-### A rich, full-stack boilerplate, built in TypeScript
+# Ingredients 👨‍🍳
+## A rich, full-stack boilerplate, built in TypeScript
 Project's stack list is divided into 3 lists
 
-#### Common
+### Common
 - 👨‍💼 Package Manager: [PNPM](https://pnpm.io/)
 - 🔏 Type system: [TypeScript](https://www.typescriptlang.org/)
 - 🧪 Test Runner: [Jest](https://jestjs.io/)
@@ -17,7 +46,7 @@ Project's stack list is divided into 3 lists
 - 📦 Continuous Integration: [GitHub Actions](https://github.com/features/actions/)
 - 🔱 Reverse Proxy Server: [NGINX](https://www.nginx.com/)
 
-#### Backend
+### Backend
 - ⏱ Runtime: [Node.js](https://nodejs.org/en/)
 - 🖥 GraphQL, REST API and WebSocket Framework: [Fastify](https://www.fastify.io/)
 - 🔀 Live communication: [WebSocket](https://github.com/websockets/ws)
@@ -25,21 +54,21 @@ Project's stack list is divided into 3 lists
 - 🗃️ Database framework: [Mongoose](https://mongoosejs.com/) 
 - 📝 REST API Documentation: [Swagger](https://swagger.io/tools/swagger-ui/)
 
-#### Frontend
+### Frontend
 - 🖼 UI Framework: [React](https://reactjs.org/)
 - 🎨 CSS Framework: [Tailwind](https://tailwindcss.com/)
 - 📝 UI Documentation: [Storybook](https://storybook.js.org/)
 - 🔨 Bundler: [Webpack](https://webpack.js.org/)
 - 👕 Style Linter: [Stylelint](https://stylelint.io/)
 
-## Requirements
+# Requirements
 1. Node.js >= 12.22.0
 2. Docker
 
 > _Before getting started, make sure that Docker (Desktop) is running if you
   want to work locally, otherwise commands may fail, etc._
 
-## Getting started
+# Getting started
 1. Use this repository as template or create a new repository by cloning
 2. Visit [Codecov](https://docs.codecov.com/docs/quick-start#getting-started)
    and register your repo
@@ -83,5 +112,3 @@ This project consists of integration tests and unit tests upon the necessity of
 requirements
 Run Jest for running tests:   
 `pnpm test`
-
-## Repository
