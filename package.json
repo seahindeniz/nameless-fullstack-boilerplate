@@ -24,6 +24,7 @@
     "build": "pnpm -r build",
     "start": "pnpm -r start",
     "test": "pnpm -r test",
+    "test:ci": "pnpm -r test:ci",
     "lint": "pnpm -r lint",
     "lint:ci": "pnpm -r lint:ci",
     "--": "",

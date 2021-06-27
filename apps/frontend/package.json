@@ -20,6 +20,7 @@
     "build-storybook": "build-storybook",
     "--": "",
     "test": "jest",
+    "test:ci": "jest",
     "test:watch": "pnpm test -- --watch",
     "test:watchAll": "pnpm test -- --watchAll",
     "---": "",
