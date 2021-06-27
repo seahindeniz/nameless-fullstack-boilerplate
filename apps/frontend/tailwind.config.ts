@@ -3,6 +3,7 @@
 const windmill = require('@windmill/react-ui/config');
 
 module.exports = windmill({
+  mode: 'jit',
   purge: ['**/src/**/*.{[tj]s?(x),html}'],
   darkMode: 'media',
   theme: {
