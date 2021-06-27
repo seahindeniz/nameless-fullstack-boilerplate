@@ -15,7 +15,7 @@
     "jest",
     "codecov"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
