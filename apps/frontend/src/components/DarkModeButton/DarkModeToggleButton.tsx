@@ -17,7 +17,9 @@ function storeDarkModeState(darkModeState: boolean) {
 export function getDarkModeState(): boolean {
   const storedDarkModeState = getStoredDarkModeState();
 
-  if (storedDarkModeState === null) return isColorSchemeDark();
+  if (storedDarkModeState === null) {
+    return isColorSchemeDark();
+  }
 
   return storedDarkModeState;
 }
