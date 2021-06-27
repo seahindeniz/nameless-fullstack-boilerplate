@@ -7,7 +7,9 @@
   <h2 align="center">Nameless Fullstack Starter Kit</h2>
   <p align="center">A rich, full-stack boilerplate, built in TypeScript.</p>
   <p align="center">
-    <a href="https://github.com/seahindeniz/nameless-fullstack-boilerplate/LICENSE.md">
+    <a
+      href="https://github.com/seahindeniz/nameless-fullstack-boilerplate/LICENSE.md"
+    >
       <img
         alt="License"
         src="https://img.shields.io/github/license/seahindeniz/nameless-fullstack-boilerplate?color=brightgreen&style=for-the-badge"
@@ -18,14 +20,34 @@
     >
       <img
         alt="GitHub Actions"
-        src="https://img.shields.io/github/workflow/status/seahindeniz/nameless-fullstack-boilerplate/Lint,%20Build%20&%20Test?style=for-the-badge"
+        src="https://img.shields.io/github/workflow/status/seahindeniz/nameless-fullstack-boilerplate/Lint,%20Build%20&%20Test?style=for-the-badge&logo=github"
         height="27"
       />
     </a>
     <a href="https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate">
       <img
         alt="Codecov branch"
-        src="https://img.shields.io/codecov/c/github/seahindeniz/nameless-fullstack-boilerplate/master.svg?style=for-the-badge"
+        src="https://img.shields.io/codecov/c/github/seahindeniz/nameless-fullstack-boilerplate/master.svg?style=for-the-badge&logo=codecov"
+      />
+    </a>
+    <a href="https://github.com/airbnb/javascript">
+      <img
+        alt="Code Style"
+        src="https://img.shields.io/badge/code%20style-airbnb-ff5a5f?style=for-the-badge&logo=eslint"
+      />
+    </a>
+    <a href="https://www.conventionalcommits.org/en/v1.0.0/">
+      <img
+        alt="Conventional Commits"
+        src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-fe5196?style=for-the-badge"
+      />
+    </a>
+    <a
+      href="https://libraries.io/github/seahindeniz/nameless-fullstack-boilerplate"
+    >
+      <img
+        alt="Dependencies"
+        src="https://img.shields.io/librariesio/github/seahindeniz/nameless-fullstack-boilerplate?style=for-the-badge&logo=librariesdotio"
       />
     </a>
   </p>
