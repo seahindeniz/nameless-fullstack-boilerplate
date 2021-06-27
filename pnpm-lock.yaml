@@ -30,7 +30,7 @@ importers:
       '@typegoose/typegoose': ^8.0.0-beta.16
       '@types/ip': ^1.1.0
       '@types/jest': ^26.0.23
-      '@types/node': ^15.12.4
+      '@types/node': ^15.12.5
       '@types/ws': ^7.4.5
       '@typescript-eslint/eslint-plugin': ^4.28.0
       '@typescript-eslint/parser': ^4.28.0
@@ -53,11 +53,11 @@ importers:
       mercurius: ^7.9.1
       mercurius-codegen: ^1.6.1
       mockingoose: ^2.15.2
-      mongodb-memory-server: 7.0.0-beta.42
-      mongoose: ^5.12.14
+      mongodb-memory-server: ^7.0.0-beta.49
+      mongoose: ^5.12.15
       nodemon: ^2.0.7
-      pino-pretty: ^5.0.2
-      prettier: ^2.3.1
+      pino-pretty: ^5.1.0
+      prettier: ^2.3.2
       rimraf: ^3.0.2
       ts-jest: 26.5.6
       ts-json-schema-generator: ^0.93.0
@@ -67,7 +67,7 @@ importers:
       ws: ^7.5.0
     dependencies:
       '@hapi/boom': 9.1.2
-      '@typegoose/typegoose': 8.0.0-beta.16_mongoose@5.12.14
+      '@typegoose/typegoose': 8.0.0-beta.16_mongoose@5.12.15
       class-validator: 0.13.1
       cross-env: 7.0.3
       dotenv: 10.0.0
@@ -76,7 +76,7 @@ importers:
       fastify-websocket: 3.2.0
       graphql: 15.5.1
       mercurius: 7.9.1
-      mongoose: 5.12.14
+      mongoose: 5.12.15
       rimraf: 3.0.2
       type-graphql: 1.1.1_39030d905112aa1c59b146b3756f603a
       typescript: 4.3.4
@@ -84,7 +84,7 @@ importers:
       '@pnpm/make-dedicated-lockfile': 0.2.12
       '@types/ip': 1.1.0
       '@types/jest': 26.0.23
-      '@types/node': 15.12.4
+      '@types/node': 15.12.5
       '@types/ws': 7.4.5
       '@typescript-eslint/eslint-plugin': 4.28.0_4ec1e0eca7c6e4115e1e7a13008fdec2
       '@typescript-eslint/parser': 4.28.0_eslint@7.29.0+typescript@4.3.4
@@ -93,19 +93,19 @@ importers:
       eslint-config-prettier: 8.3.0_eslint@7.29.0
       eslint-import-resolver-typescript: 2.4.0_ed25848055400ef85b03763cf48e28ff
       eslint-plugin-import: 2.23.4_eslint@7.29.0
-      eslint-plugin-prettier: 3.4.0_de2986b0c29d2faa795004f5443c76d1
+      eslint-plugin-prettier: 3.4.0_4e72879372edbffcbdaf0fa17b22c203
       get-port: 5.1.1
       glob-promise: 4.2.0
       jest: 26.6.3_ts-node@10.0.0
       mercurius-codegen: 1.6.1_e15cc30c630d02788036ead81a7796d6
-      mockingoose: 2.15.2_mongoose@5.12.14
-      mongodb-memory-server: 7.0.0-beta.42
+      mockingoose: 2.15.2_mongoose@5.12.15
+      mongodb-memory-server: 7.0.0-beta.49
       nodemon: 2.0.7
-      pino-pretty: 5.0.2
-      prettier: 2.3.1
+      pino-pretty: 5.1.0
+      prettier: 2.3.2
       ts-jest: 26.5.6_jest@26.6.3+typescript@4.3.4
       ts-json-schema-generator: 0.93.0
-      ts-node: 10.0.0_83f53b0a0c5616d3fa00ed4e30b9ce1b
+      ts-node: 10.0.0_50b8209fc428c75f5de073e8ad631fde
       ws: 7.5.0
 
   apps/frontend:
@@ -4995,7 +4995,7 @@ packages:
   /@tsconfig/node16/1.0.1:
     resolution: {integrity: sha512-FTgBI767POY/lKNDNbIzgAX6miIDBs6NTCbdlDb8TrWovHsSvaVIZDlTqym29C6UqhzwcJx4CYr+AlrMywA0cA==}
 
-  /@typegoose/typegoose/8.0.0-beta.16_mongoose@5.12.14:
+  /@typegoose/typegoose/8.0.0-beta.16_mongoose@5.12.15:
     resolution: {integrity: sha512-Ruw7fbx7RyljlyODzfDJWjsaJejY8RzOb/fHWP89dhEGlHaVIfmYSN5J/UjZQdl4iu+wV1/oJ1r/t/u8zxnrGQ==}
     engines: {node: '>=10.15.0'}
     peerDependencies:
@@ -5003,7 +5003,7 @@ packages:
     dependencies:
       lodash: 4.17.21
       loglevel: 1.7.1
-      mongoose: 5.12.14
+      mongoose: 5.12.15
       reflect-metadata: 0.1.13
       semver: 7.3.5
       tslib: 2.2.0
@@ -5056,7 +5056,7 @@ packages:
   /@types/bson/4.0.3:
     resolution: {integrity: sha512-mVRvYnTOZJz3ccpxhr3wgxVmSeiYinW+zlzQz3SXWaJmD1DuL05Jeq7nKw3SnbKmbleW5qrLG5vdyWe/A9sXhw==}
     dependencies:
-      '@types/node': 15.12.4
+      '@types/node': 15.12.5
     dev: false
 
   /@types/color-convert/2.0.0:
@@ -5275,7 +5275,7 @@ packages:
     resolution: {integrity: sha512-9hhgvYPdC5iHyyksPcKCu45gfaAIPQHKHGdvNXu4582DmOZX3wrUJIJPT40o4G1oTKPgpMMFqZglOTjhnYoF+A==}
     dependencies:
       '@types/bson': 4.0.3
-      '@types/node': 15.12.4
+      '@types/node': 15.12.5
     dev: false
 
   /@types/node-fetch/2.5.10:
@@ -5289,16 +5289,15 @@ packages:
     resolution: {integrity: sha512-/tpUyFD7meeooTRwl3sYlihx2BrJE7q9XF71EguPFIySj9B7qgnRtHsHTho+0AUm4m1SvWGm6uSncrR94q6Vtw==}
     dev: false
 
-  /@types/node/15.12.0:
-    resolution: {integrity: sha512-+aHJvoCsVhO2ZCuT4o5JtcPrCPyDE3+1nvbDprYes+pPkEsbjH7AGUCNtjMOXS0fqH14t+B7yLzaqSz92FPWyw==}
-    dev: true
-
   /@types/node/15.12.1:
     resolution: {integrity: sha512-zyxJM8I1c9q5sRMtVF+zdd13Jt6RU4r4qfhTd7lQubyThvLfx6yYekWSQjGCGV2Tkecgxnlpl/DNlb6Hg+dmEw==}
     dev: true
 
   /@types/node/15.12.4:
     resolution: {integrity: sha512-zrNj1+yqYF4WskCMOHwN+w9iuD12+dGm0rQ35HLl9/Ouuq52cEtd0CH9qMgrdNmi5ejC1/V7vKEXYubB+65DkA==}
+
+  /@types/node/15.12.5:
+    resolution: {integrity: sha512-se3yX7UHv5Bscf8f1ERKvQOD6sTyycH3hdaoozvaLxgUiY5lIGEeH37AD0G0Qi9kPqihPn0HOfd2yaIEN9VwEg==}
 
   /@types/node/15.6.1:
     resolution: {integrity: sha512-7EIraBEyRHEe7CH+Fm1XvgqU6uwZN8Q7jppJGcqjROMT29qhAuuOxYB1uEY5UMYQKEmA5D+5tBnhdaPXSsLONA==}
@@ -6158,7 +6157,7 @@ packages:
   /async-mutex/0.3.1:
     resolution: {integrity: sha512-vRfQwcqBnJTLzVQo72Sf7KIUbcSUP5hNchx6udI1U6LuPQpfePgdjJzlCe76yFZ8pxlLjn9lwcl/Ya0TSOv0Tw==}
     dependencies:
-      tslib: 2.2.0
+      tslib: 2.3.0
     dev: true
 
   /async/2.6.3:
@@ -8780,6 +8779,23 @@ packages:
       language-tags: 1.0.5
     dev: true
 
+  /eslint-plugin-prettier/3.4.0_4e72879372edbffcbdaf0fa17b22c203:
+    resolution: {integrity: sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==}
+    engines: {node: '>=6.0.0'}
+    peerDependencies:
+      eslint: '>=5.0.0'
+      eslint-config-prettier: '*'
+      prettier: '>=1.13.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 7.29.0
+      eslint-config-prettier: 8.3.0_eslint@7.29.0
+      prettier: 2.3.2
+      prettier-linter-helpers: 1.0.0
+    dev: true
+
   /eslint-plugin-prettier/3.4.0_de2986b0c29d2faa795004f5443c76d1:
     resolution: {integrity: sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==}
     engines: {node: '>=6.0.0'}
@@ -11208,7 +11224,7 @@ packages:
       jest-validate: 26.6.2
       micromatch: 4.0.4
       pretty-format: 26.6.2
-      ts-node: 10.0.0_83f53b0a0c5616d3fa00ed4e30b9ce1b
+      ts-node: 10.0.0_50b8209fc428c75f5de073e8ad631fde
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -11592,9 +11608,9 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: true
 
-  /joycon/2.2.5:
-    resolution: {integrity: sha512-YqvUxoOcVPnCp0VU1/56f+iKSdvIRJYPznH22BdXV3xMk75SFXhWeJkZ8C9XxUWt1b5x2X1SxuFygW1U0FmkEQ==}
-    engines: {node: '>=6'}
+  /joycon/3.0.1:
+    resolution: {integrity: sha512-SJcJNBg32dGgxhPtM0wQqxqV0ax9k/9TaUskGDSJkSFSQOEWWvQ3zzWdGQRIUry2j1zA5+ReH13t0Mf3StuVZA==}
+    engines: {node: '>=10'}
     dev: true
 
   /js-string-escape/1.0.1:
@@ -12563,13 +12579,13 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  /mockingoose/2.15.2_mongoose@5.12.14:
+  /mockingoose/2.15.2_mongoose@5.12.15:
     resolution: {integrity: sha512-50mtbAk29Go5hdhzqTmjmE67Z/cB0yPz45u2jrHoGm4nkYnnBq224viWgyKwnxzWw8birnqn98viM2cRBTnJvw==}
     engines: {node: '>=6.4.0'}
     peerDependencies:
       mongoose: '>=4.9.10'
     dependencies:
-      mongoose: 5.12.14
+      mongoose: 5.12.15
     dev: true
 
   /modern-normalize/1.1.0:
@@ -12577,9 +12593,9 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /mongodb-memory-server-core/7.0.0-beta.42:
-    resolution: {integrity: sha512-UFXrzCv6SYS5I9zW+/dxQeVnq4EVfXmjpiYzz7iuSoWRq3lFBBvBa6a77HXapOJM9Eco7A79NLBkBev5+3hWwg==}
-    engines: {node: '>=10.15.0'}
+  /mongodb-memory-server-core/7.0.0-beta.49:
+    resolution: {integrity: sha512-qMzOGh89UlIRSZzEtWQKhh2phTZe99bf3wo84UEkIIiuo8vfGxO+1Xevx52O4eVrS6qoxFcYfKtNKmAjg+YH3Q==}
+    engines: {node: '>=12.22.0'}
     dependencies:
       '@types/tmp': 0.2.0
       async-mutex: 0.3.1
@@ -12595,11 +12611,9 @@ packages:
       semver: 7.3.5
       tar-stream: 2.2.0
       tmp: 0.2.1
-      tslib: 2.2.0
+      tslib: 2.3.0
       uuid: 8.3.2
       yauzl: 2.10.0
-    optionalDependencies:
-      rimraf: 3.0.2
     transitivePeerDependencies:
       - aws4
       - bson-ext
@@ -12610,13 +12624,13 @@ packages:
       - supports-color
     dev: true
 
-  /mongodb-memory-server/7.0.0-beta.42:
-    resolution: {integrity: sha512-9A22cY99YXW/spcxHohLajcV8QBCLXco74fRAYogUu1G5ZxI70709qFW7Qk1lAArNjihdld5yUFsWqnKy2Wfxg==}
-    engines: {node: '>=10.15.0'}
+  /mongodb-memory-server/7.0.0-beta.49:
+    resolution: {integrity: sha512-LENpApp+ZOFvrlWiBFTZ9DlUY5UALozvE5zFxKlGUzJAwvQoa/b4Cyh4swxRhNTIHNZomi8Ihh8nJ/SIFW8tPw==}
+    engines: {node: '>=12.22.0'}
     requiresBuild: true
     dependencies:
-      mongodb-memory-server-core: 7.0.0-beta.42
-      tslib: 2.2.0
+      mongodb-memory-server-core: 7.0.0-beta.49
+      tslib: 2.3.0
     transitivePeerDependencies:
       - aws4
       - bson-ext
@@ -12693,23 +12707,23 @@ packages:
       saslprep: 1.0.3
     dev: true
 
-  /mongoose-legacy-pluralize/1.0.2_mongoose@5.12.14:
+  /mongoose-legacy-pluralize/1.0.2_mongoose@5.12.15:
     resolution: {integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==}
     peerDependencies:
       mongoose: '*'
     dependencies:
-      mongoose: 5.12.14
+      mongoose: 5.12.15
     dev: false
 
-  /mongoose/5.12.14:
-    resolution: {integrity: sha512-1lMRY8cfGYFWHqe5DLnVgNQDyD0fEbSoWIQe9Mllt/ZtayZ5XUFQt+o5VKrB44vsT5cLNzgwEFO0NvwTwqLluQ==}
+  /mongoose/5.12.15:
+    resolution: {integrity: sha512-GVvxE2/mbUsxAbTtleFlehCNMFlzcgKue/olukIpoN6iw1MYXKodf+ZIRndO+2jzlgbZgiHkAZZJbcFNt1DgHA==}
     engines: {node: '>=4.0.0'}
     dependencies:
       '@types/mongodb': 3.6.17
       bson: 1.1.6
       kareem: 2.3.2
       mongodb: 3.6.8
-      mongoose-legacy-pluralize: 1.0.2_mongoose@5.12.14
+      mongoose-legacy-pluralize: 1.0.2_mongoose@5.12.15
       mpath: 0.8.3
       mquery: 3.2.5
       ms: 2.1.2
@@ -13476,18 +13490,18 @@ packages:
     resolution: {integrity: sha1-clVrgM+g1IqXToDnckjoDtT3+HA=}
     engines: {node: '>=0.10.0'}
 
-  /pino-pretty/5.0.2:
-    resolution: {integrity: sha512-nOoRoQXYZgURqtSwsM+FLFHBTrZRjuMKfQhELMeewjHnM8xdNhlkqLEGxBpcSCkFlfjHX3jdav9TQzQljjSL9w==}
+  /pino-pretty/5.1.0:
+    resolution: {integrity: sha512-fpDU80MKP59XOWxqV8crTDjRegC2fbDsA56zTr5s1guiv6QuYHILc9x1a4+o9SNPtfmF2kQdpAZS+bIExtbELQ==}
     hasBin: true
     dependencies:
       '@hapi/bourne': 2.0.0
-      '@types/node': 15.12.0
+      '@types/node': 15.12.5
       args: 5.0.1
       chalk: 4.1.1
       dateformat: 4.5.1
       fast-safe-stringify: 2.0.7
       jmespath: 0.15.0
-      joycon: 2.2.5
+      joycon: 3.0.1
       pump: 3.0.0
       readable-stream: 3.6.0
       rfdc: 1.3.0
@@ -14395,6 +14409,12 @@ packages:
 
   /prettier/2.3.1:
     resolution: {integrity: sha512-p+vNbgpLjif/+D+DwAZAbndtRrR0md0MwfmOVN9N+2RgyACMT+7tfaRnT+WDPkqnuVwleyuBIG2XBxKDme3hPA==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier/2.3.2:
+    resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -16947,6 +16967,35 @@ packages:
       webpack: 5.40.0_webpack-cli@4.7.2
     dev: false
 
+  /ts-node/10.0.0_50b8209fc428c75f5de073e8ad631fde:
+    resolution: {integrity: sha512-ROWeOIUvfFbPZkoDis0L/55Fk+6gFQNZwwKPLinacRl6tsxstTF1DbAcLKkovwnpKMVvOMHP1TIbnwXwtLg1gg==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': '>=1.2.45'
+      '@swc/wasm': '>=1.2.45'
+      '@types/node': '*'
+      typescript: '>=2.7'
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      '@swc/wasm':
+        optional: true
+    dependencies:
+      '@tsconfig/node10': 1.0.7
+      '@tsconfig/node12': 1.0.7
+      '@tsconfig/node14': 1.0.0
+      '@tsconfig/node16': 1.0.1
+      '@types/node': 15.12.5
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      source-map-support: 0.5.19
+      typescript: 4.3.4
+      yn: 3.1.1
+    dev: true
+
   /ts-node/10.0.0_83f53b0a0c5616d3fa00ed4e30b9ce1b:
     resolution: {integrity: sha512-ROWeOIUvfFbPZkoDis0L/55Fk+6gFQNZwwKPLinacRl6tsxstTF1DbAcLKkovwnpKMVvOMHP1TIbnwXwtLg1gg==}
     engines: {node: '>=12.0.0'}
@@ -16974,6 +17023,7 @@ packages:
       source-map-support: 0.5.19
       typescript: 4.3.4
       yn: 3.1.1
+    dev: false
 
   /ts-pnp/1.2.0_typescript@4.3.4:
     resolution: {integrity: sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==}
@@ -17016,6 +17066,10 @@ packages:
 
   /tslib/2.2.0:
     resolution: {integrity: sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==}
+
+  /tslib/2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: true
 
   /tsutils/3.21.0_typescript@4.3.4:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
