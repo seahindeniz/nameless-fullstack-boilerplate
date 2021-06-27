@@ -67,6 +67,7 @@ const DarkModeToggleButton = (): JSX.Element => {
   return (
     <Button
       layout="link"
+      aria-label={darkModeState ? 'Light mode' : 'Dark mode'}
       icon={() => (darkModeState ? <LightIcon /> : <NightIcon />)}
       onClick={handleToggleClick}
     />
