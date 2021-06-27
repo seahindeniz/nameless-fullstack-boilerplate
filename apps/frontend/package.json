@@ -8,7 +8,7 @@
   "engines": {
     "node": ">=12.22.0"
   },
-  "license": "ISC",
+  "license": "MIT",
   "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "scripts": {
     "build": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack --config webpack.prod.ts --progress",
