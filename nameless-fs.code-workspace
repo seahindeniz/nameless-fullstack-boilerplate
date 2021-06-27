@@ -2,6 +2,7 @@
   "extensions": {
     "recommendations": [
       "streetsidesoftware.code-spell-checker",
+      "vivaxy.vscode-conventional-commits",
       "ms-azuretools.vscode-docker",
       "dbaeumer.vscode-eslint",
       "orta.vscode-jest",
