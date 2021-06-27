@@ -15,7 +15,7 @@ const Header = (): JSX.Element => {
       <div id="logo" className="flex flex-1 items-center">
         <Link to="/" className="flex items-center">
           <FaHatWizard size="32" />
-          <p className="px-2 font-sans text-2xl">Nameless</p>
+          <h1 className="px-2 font-sans text-2xl">Nameless</h1>
         </Link>
       </div>
       <NavigationBar />
