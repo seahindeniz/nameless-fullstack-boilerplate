@@ -92,6 +92,7 @@
         "tab.unfocusedInactiveBackground": "#222",
         "window.activeBorder": "#000"
       }
-    }
+    },
+    "conventionalCommits.scopes": ["root", "backend", "frontend"]
   }
 }
