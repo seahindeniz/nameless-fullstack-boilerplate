@@ -2,7 +2,6 @@
   <img
     alt="Nameless logo"
     src="https://i.ibb.co/3rNQyJk/clown-5862845-min.png"
-    height="140"
   />
   <h2 align="center">Nameless Fullstack Starter Kit</h2>
   <p align="center">A rich, full-stack boilerplate, built in TypeScript.</p>
@@ -20,8 +19,7 @@
     >
       <img
         alt="GitHub Actions"
-        src="https://img.shields.io/github/workflow/status/seahindeniz/nameless-fullstack-boilerplate/Lint,%20Build%20&%20Test?style=for-the-badge&logo=github"
-        height="27"
+        src="https://img.shields.io/github/workflow/status/seahindeniz/nameless-fullstack-boilerplate/Lint,%20Build%20&%20Test?label=Lint%2C%20Build%20%26%20Test&style=for-the-badge&logo=github"
       />
     </a>
     <a href="https://codecov.io/gh/seahindeniz/nameless-fullstack-boilerplate">
