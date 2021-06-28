@@ -52,7 +52,6 @@
 </div>
 
 # Ingredients 👨‍🍳
-## A rich, full-stack boilerplate, built in TypeScript
 Project's stack list is divided into 3 lists
 
 ### Common
@@ -63,12 +62,12 @@ Project's stack list is divided into 3 lists
 - 👕 Linter: [ESLint](https://eslint.org/)
 - 💄 Formatter: [Prettier](https://prettier.io/)
 - 🚢 Deployment: [Docker]()
-- 📦 Continuous Integration: [GitHub Actions](https://github.com/features/actions/)
+- 📦 Continuous Integration: [GitHub Actions]
 - 🔱 Reverse Proxy Server: [NGINX](https://www.nginx.com/)
 
 ### Backend
 - ⏱ Runtime: [Node.js](https://nodejs.org/en/)
-- 🖥 GraphQL, REST API and WebSocket Framework: [Fastify](https://www.fastify.io/)
+- 🖥 GraphQL, REST API and WebSocket Framework: [Fastify]
 - 🔀 Live communication: [WebSocket](https://github.com/websockets/ws)
 - 🗃️ Database: [MongoDB](https://www.mongodb.com/)
 - 🗃️ Database framework: [Mongoose](https://mongoosejs.com/) 
@@ -115,9 +114,8 @@ In the root folder, just run:
    - Frontend server will run at <http://nameless.local/>
    - Storybook server will run at <http://storybook.nameless.local/>
 
-> Make sure to add the following host names to the host file to imitate domain
-  names
-  _([How to edit](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux))_  
+> Make sure to add the following host-names to the host file to imitate the
+  domain names _([How to edit][HTE])_  
 > 127.0.0.1		nameless.local  
 > 127.0.0.1		api.nameless.local  
 > 127.0.0.1		storybook.nameless.local
@@ -132,3 +130,7 @@ This project consists of integration tests and unit tests upon the necessity of
 requirements
 Run Jest for running tests:   
 `pnpm test`
+
+[GitHub Actions]: https://github.com/features/actions/
+[Fastify]: https://www.fastify.io/
+[HTE]: https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux
