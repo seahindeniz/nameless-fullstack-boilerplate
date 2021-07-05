@@ -3,6 +3,8 @@
   "description": "Nameless Fullstack Starter Kit",
   "author": "Sahin Deniz <seahindeniz@gmail.com> (https://github.com/seahindeniz)",
   "private": true,
+  "license": "MIT",
+  "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "keywords": [
     "node",
     "typescript",
@@ -15,8 +17,6 @@
     "jest",
     "codecov"
   ],
-  "license": "MIT",
-  "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "-": "",

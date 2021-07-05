@@ -4,12 +4,12 @@
   "description": "Back-end app for the nameless boiler project",
   "author": "Sahin Deniz <seahindeniz@gmail.com> (https://github.com/seahindeniz)",
   "private": true,
+  "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
+  "license": "MIT",
   "main": "src/server.ts",
   "engines": {
     "node": ">=12.22.0"
   },
-  "license": "MIT",
-  "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.prod.json",
     "start": "cross-env NODE_ENV=production node dist/server.js",

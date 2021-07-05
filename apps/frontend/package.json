@@ -4,12 +4,12 @@
   "description": "Front-end app for the nameless boiler project",
   "author": "Sahin Deniz <seahindeniz@gmail.com> (https://github.com/seahindeniz)",
   "private": true,
+  "license": "MIT",
+  "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "main": "src/index.tsx",
   "engines": {
     "node": ">=12.22.0"
   },
-  "license": "MIT",
-  "repository": "github:seahindeniz/nameless-fullstack-boilerplate",
   "scripts": {
     "build": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack --config webpack.prod.ts --progress",
     "serve": "serve -n -l 3001",
