@@ -1,5 +1,4 @@
 packages:
-  - 'apps/backend'
-  - 'apps/frontend'
+  - 'apps/*'
 
   - '!**/test/**'
