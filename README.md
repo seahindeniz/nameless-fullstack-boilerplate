@@ -89,8 +89,7 @@ Project's stack list is divided into 3 lists
 
 # Getting started
 1. Use this repository as template or create a new repository by cloning
-2. Visit [Codecov](https://docs.codecov.com/docs/quick-start#getting-started)
-   and register your repo
+2. Visit [Codecov](https://codecov.com/) and [register your repo][CodecovDocs]
 3. Head to the repository Settings > [Secrets](./settings/secrets/actions) for
    registering your Codecov token
 4. Add a new secret: `CODECOV_TOKEN`
@@ -134,3 +133,4 @@ Run Jest for running tests:
 [GitHub Actions]: https://github.com/features/actions/
 [Fastify]: https://www.fastify.io/
 [HTE]: https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux
+[CodecovDocs]: https://docs.codecov.com/docs/quick-start#getting-started
