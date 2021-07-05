@@ -94,6 +94,11 @@
         "window.activeBorder": "#000"
       }
     },
-    "conventionalCommits.scopes": ["root", "backend", "frontend"]
+    "conventionalCommits.scopes": [
+      "root",
+      "backend",
+      "frontend",
+      "all"
+    ]
   }
 }
